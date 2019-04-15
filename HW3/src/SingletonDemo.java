@@ -5,10 +5,10 @@ public class SingletonDemo {
         ArrayList<Singleton> singletons = new ArrayList<>();
         for (int i = 1; i <= 12; i++) {
             Singleton singleton = Singleton.getInstance();
-            if (!(singleton == null)){
+            if (!(singleton == null)) {
                 singletons.add(singleton);
             }
         }
-        System.out.println("Size of singletons array list is: " + singletons.size());
+        System.out.println("Size of singletons ArrayList is: " + singletons.size());
     }
 }
