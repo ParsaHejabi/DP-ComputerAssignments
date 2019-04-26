@@ -13,11 +13,10 @@ public class CommandTestDrive {
         IReceiver iReceiver3 = new Jonoobi();
 
         client1.createCommand("Mirzaghasemi", invoker1, iReceiver1);
-        client2.createCommand("dande kabab", invoker2, iReceiver2);
+        client1.createCommand("dande kabab", invoker1, iReceiver2);
         client3.createCommand("ghalie mahi", invoker3, iReceiver3);
 
-        invoker1.iCommand.execute();
-        invoker2.iCommand.execute();
-        invoker3.iCommand.execute();
+        invoker1.execute();
+        invoker3.execute();
     }
 }
